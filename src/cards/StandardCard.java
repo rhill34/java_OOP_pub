@@ -23,10 +23,12 @@ public class StandardCard extends Card {
 //    constructors
 
     /**
-     * 
+     * Constructor of StandardCard object type
+     * @param rank String data type to represent the rank of the object
+     * @param suit String data type to represent the suit of the object
      */
     public StandardCard(String rank, String suit) {
-        super(color +" "+ shading +"-"+color+" "+ number);
+        super(rank +" of "+ suit);
         this.rank = rank;
         this.suit = suit;
     }
@@ -47,13 +49,6 @@ public class StandardCard extends Card {
      */
     public String getSuit() { return suit; }
 
-    /**
-     * Getter for the attribute of a card from the Set Game
-     * @return String data type to represent the color
-     * of the Set Card type object
-     *
-     */
-    public String getColor() { return color; }
 //    mutator
 //    toString
 
