@@ -37,8 +37,10 @@ public class SetCard extends Card {
      * @param color String data type to represent the color of the
      *              SetCard object
      */
-    public SetCard(String shape, int number, String shading,
-                   String color) {
+    public SetCard(String shape, 
+                    int number, 
+                    String shading, 
+                    String color) {
         super(color +" "+ shading +"-"+color+" "+ number);
         this.shape = shape;
         this.number = number;
