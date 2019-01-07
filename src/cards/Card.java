@@ -47,4 +47,4 @@ public abstract class Card {
     @Override
     public String toString() { return getCardText(); }
 
-}//end of class
+}
