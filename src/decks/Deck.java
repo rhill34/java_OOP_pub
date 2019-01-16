@@ -45,7 +45,7 @@ public class Deck {
      *
      * @return integer data type to represent the amount of cards in the dealerPile
      */
-    public int cardCount() { return dealerPile.size(); }
+    public int cardCount() { return this.dealerPile.size(); }
 
 //     mutator
 

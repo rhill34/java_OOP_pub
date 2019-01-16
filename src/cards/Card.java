@@ -5,14 +5,14 @@
  * Card.java
  * Summary:
  * Abstract Card class to represents a playing card
- * in any type of card game
+ * in any type of card part1_test_game
  *
  */
 package cards;
 
 /**
  * Abstract Card class to represents
- * a playing card in any type of card game
+ * a playing card in any type of card part1_test_game
  *
  * @author Rob The King!
  * @version 1.0
@@ -38,7 +38,10 @@ public abstract class Card {
      * @return String data type to represent the card
      *         description text
      */
-    public String getCardText() { return cardText; }
+    public String getCardText()
+    {
+        return cardText;
+    }
 
 //    mutator
 

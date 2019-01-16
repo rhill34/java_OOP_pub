@@ -4,14 +4,14 @@
  * SetCard.java
  * Summary:
  * SetCard extends Card class to represents a playing card
- * in Set card game
+ * in Set card part1_test_game
  */
 package cards;
 
 /**
  * SetCard extends Card class
  * to represents a playing card
- * in Set card game
+ * in Set card part1_test_game
  * @author Rob The King!
  * @version 1.0
  */

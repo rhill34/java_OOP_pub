@@ -1,4 +1,4 @@
-package game;
+package gametwo.blackjack;
 
 import java.util.Scanner;
 

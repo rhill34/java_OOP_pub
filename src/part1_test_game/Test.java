@@ -6,12 +6,10 @@
  * cards.
  *
  */
-package game;
+package part1_test_game;
 
 import decks.Deck;
 import decks.StandardDeck;
-
-import static game.Console.getInt;
 
 
 /**
@@ -24,7 +22,7 @@ public class Test
 {
 //    fields
     private static Deck testDeck =  new StandardDeck();
-//    private static Console console = new Console();
+    private static Console console = new Console();
 
     /**
      * Main method to access the entry point of this program
@@ -71,8 +69,7 @@ public class Test
         String prompt5 = "Enter 5 : To get the amount of cards left in the deck\n";
 
         System.out.println("Card Game Test Menu");
-        int play =
-                getInt(prompt1 + prompt2 + prompt3 + prompt4 + prompt5);
+        int play = console.getInt(prompt1 + prompt2 + prompt3 + prompt4 + prompt5);
 
         switch(play) {
             case 1:
