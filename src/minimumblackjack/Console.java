@@ -1,4 +1,4 @@
-package gametwo.blackjack;
+package minimumblackjack;
 
 import java.util.Scanner;
 
@@ -11,14 +11,14 @@ import java.util.Scanner;
  */
 public class Console
 {
-	private static Scanner console;
+	private static Scanner console = new Scanner(System.in);
 
 	/**
 	 * Creates the console object which will read from the keyboard
 	 */
 	public Console() {
 		// instantiate or create object console
-		this.console = new Scanner(System.in);
+
 
 	}
 

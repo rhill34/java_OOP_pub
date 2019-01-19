@@ -1,14 +1,20 @@
 /*
  * Robert Hill
- * 01.14.19
+ * 01.16.19
  * Blackjack.java
  * Summary: Blackjack class contains the console program logic of the game play
  *
  */
-package gametwo.blackjack;
+package minimumblackjack;
 
 import cards.StandardCard;
 import decks.StandardDeck;
+import minimumblackjack.players.Dealer;
+import minimumblackjack.players.You;
+
+
+
+
 
 /**
  * Blackjack class contains the console program logic of the game play
@@ -30,8 +36,6 @@ public class Blackjack {
     private static You user;
     private static StandardDeck shoe;
     private static StandardCard dealt;
-    private static Console console = new Console();
-    private static String name;
 
     /**
      * Method to enter into the program application
@@ -40,21 +44,25 @@ public class Blackjack {
     public static void main(String [] args)
     {
         firstWelcome();
-//********************************************************************//
+        //********************************************************************//
         getYouUser();
         sitAtTable();
-//        user.getWallet().add();
-
         runGame();
-
-
-
 
     }
 
     private static void firstWelcome()
     {
-//      Welcome user to the Program
+        //        generate new deck
+        shoe = new StandardDeck();
+        String initDeck = "Generated a new Deck...\n";
+
+        System.out.println(welcomeStars().toString() + initDeck + promptToShuffle());
+    }
+
+    private static StringBuilder welcomeStars()
+    {
+        //      Welcome user to the Program
         StringBuilder stars = new StringBuilder("Welcome to my Blackjack Console " +
                 "program!\n");
         for (int i = 0; i < START; i++)
@@ -62,23 +70,21 @@ public class Blackjack {
             stars.append("*");
         }
         stars.append("\n");
+        return stars;
+    }
 
-//        generate new deck
-        shoe = new StandardDeck();
-        String initDeck = "Generated a new Deck...\n";
-
-//       shuffle the new deck
+    private static String promptToShuffle()
+    {
+        //       shuffle the new deck and prompt user
         shoe.shuffle();
-        String initShuffle = "Shuffled Deck...\n";
-
-      System.out.println(stars.toString() + initDeck + initShuffle);
+        return ( "Shuffled Deck...\n");
     }
 
     private static void getYouUser()
     {
         //        Get the users name
-        String name = console.getString("Enter your Blackjack Player name? ");
-        name = name.substring(0, 1).toUpperCase()+name.substring(1);
+        String name = Console.getString("Enter your Blackjack Player name? ");
+        name = name.substring(0, 1).toUpperCase()+ name.substring(1);
         user = new You(name);
         System.out.println("Welcome to the Blackjack table " + user.getName());
     }
@@ -95,6 +101,10 @@ public class Blackjack {
     private static void userHit()
     {
 //        hit player
+        if (shoe.cardCount() == 0)
+        {
+            shoe.shuffle();
+        }
         dealt = (table.getShoe().dealTopCard());
         table.getPlayer().setHand(dealt);
         System.out.println(table.getPlayer().getName() +", you are dealt a " + dealt) ;
@@ -106,40 +116,41 @@ public class Blackjack {
         //        Dealer shows
         dealt = (table.getShoe().dealTopCard());
         table.getDealer().setHand(dealt);
-        System.out.println(table.getDealer().getName() + ", dealer is shows a " + dealt);
+        dealer.setPoint(dealer.getHand());
+        System.out.println(table.getDealer().getName() + ", dealer is shows a " + dealt +".\n" +
+                "\tthe dealers Score is " + dealer.getPoint());
 
     }
 
     private static void usersChoice()
     {
         String userChoice =
-                console.getString(user.getName()+ ", your total is " + table.getPlayer().getPoint() +
+                Console.getString(user.getName() + ", your total is " + table.getPlayer().getPoint() +
                         " , hit? y/N");
         System.out.println(userChoice);
-        switch (userChoice.toLowerCase())
-        {
+        switch (userChoice.toLowerCase()){
             case "y":
                 userHit();
-                if(table.getPlayer().getPoint() < BLACKJACK) { usersChoice(); }
-                else if(table.getPlayer().getPoint() > BLACKJACK) {
-                    System.out.println("Sorry "+ user.getName() + ", you BUSTED!");
-                    gameSwitch();
+                if (table.getPlayer().getPoint() < BLACKJACK) {
+                    usersChoice();
+                } else if (table.getPlayer().getPoint() > BLACKJACK) {
+                    System.out.println("Sorry " + user.getName() + ", you BUSTED!");
+                    Blackjack.gameSwitch();
                 }
-                else {
-                    System.out.println(
-                            user.getName() + ", you have a BlackJack! Please wait for " +
-                                    "the dealer to reveal their cards");
+                else{
+                    System.out.println(user.getName() + ", you have a BlackJack! Please wait for " +
+                            "the dealer to reveal their cards");
+                    Blackjack.dealerChoice();
                 }
                 break;
             case "n":
-                System.out.println(user.getName() +", your total is " + user.getPoint() +
+                System.out.println(user.getName() + ", your total is " + user.getPoint() +
                         " and " +
                         "your hand is a " + user.getHand().toString());
+                Blackjack.dealerChoice();
                 break;
-
             default:
                 usersChoice();
-
         }
     }
 
@@ -151,51 +162,72 @@ public class Blackjack {
 
         table.getDealer().setPoint(table.getDealer().getHand());
         System.out.println(dealer.getName()+ ", dealers total is " + dealer.getPoint());
+    }
 
-        if(dealer.getPoint() < BLACKJACK) { hitDealer(); }
+    private static void dealerChoice()
+    {
+        if(dealer.getPoint() < BLACKJACK)
+        {
+            Blackjack.hitDealer();
+            Blackjack.dealerChoice();
+        }
         else if(dealer.getPoint() == BLACKJACK && user.getPoint() != BLACKJACK) {
-            System.out.println(user.getName() + "you lost to the " + dealer.getName() +
-                    "!");
+            System.out.println(user.getName() + ", you lost the " + dealer.getName() +
+                    "got Blackjack!");
+            Blackjack.gameSwitch();
 
         }
         else if(dealer.getPoint() == BLACKJACK && user.getPoint() == BLACKJACK) {
             System.out.println(user.getName() + "you and the " + dealer.getName() +
                     " dealer PUSH.");
-
+            Blackjack.gameSwitch();
+        }
+        else if (user.getPoint() == dealer.getPoint()) {
+            System.out.println(user.getName() + ", you PUSH with the dealer.\n" +
+                    "Your score was " + user.getPoint() + ", and the Dealer had " +
+                    dealer.getPoint() + "also!");
+            Blackjack.gameSwitch();
         }
         else {
-            System.out.println(user.getName() + "you won the " + dealer.getName() + " " +
+            System.out.println(user.getName() + " you won the " + dealer.getName() + " " +
                     "BUSTED!");
+            Blackjack.gameSwitch();
         }
-        gameSwitch();
+
     }
 
     private static void runGame()
     {
-        System.out.println(table.toString());
-//        Start a Player hand
+        //  Reset user hand
+        table.setDiscard(user.getHand());
+        user.resetHand();
+        user.resetCount();
+        //  Reset Dealer hand
+        table.setDiscard(dealer.getHand());
+        dealer.resetHand();
+        dealer.resetCount();
+
+        //        Start a Player hand
         for (int i = 0; i < 2; i++)
         {
-//            hit player
+        //            hit player
             userHit();
         }
 
         dealerShows();
 
-//      Prompt user for a choice
+        //      Prompt user for a choice
         usersChoice();
-//      Dealer turn
-        //        hit dealer
-        hitDealer();
-        runGame();
     }
 
     private static void gameSwitch()
     {
         String userGame =
-                console.getString(user.getName()+ ", do you want to play again? y/N");
-        if (userGame.toLowerCase().equals("y")) { runGame(); }
-        else { System.out.println("Thank you," + user.getName() + "for playing my " +
-                        "Blackjack Console game?"); }
+                Console.getString(user.getName()+ ", do you want to play again? y/N");
+        if (userGame.toLowerCase().equals("y")) {
+            Blackjack.runGame();
+        }
+        else { System.out.println("Thank you," + user.getName() + " for playing my " +
+                "Blackjack Console game?"); }
     }
 }
