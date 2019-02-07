@@ -12,10 +12,6 @@ import decks.StandardDeck;
 import minimumblackjack.players.Dealer;
 import minimumblackjack.players.You;
 
-
-
-
-
 /**
  * Blackjack class contains the console program logic of the game play
  *

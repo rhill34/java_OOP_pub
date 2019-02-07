@@ -2,27 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10c99916-3563-4a42-8a4e-2bf8fc35f9e1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/minimumblackjack/players/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/minimumblackjack/players/You.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/assignment1-IT301-cardgame-rhill3/gametwo/blackjack/Blackjack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/assignment1-IT301-cardgame-rhill3/gametwo/blackjack/Chips.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/assignment1-IT301-cardgame-rhill3/gametwo/blackjack/Console.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/assignment1-IT301-cardgame-rhill3/gametwo/blackjack/Dealer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/assignment1-IT301-cardgame-rhill3/gametwo/blackjack/Player.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/assignment1-IT301-cardgame-rhill3/gametwo/blackjack/Sign.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/assignment1-IT301-cardgame-rhill3/gametwo/blackjack/Stand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/assignment1-IT301-cardgame-rhill3/gametwo/blackjack/Table.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/assignment1-IT301-cardgame-rhill3/gametwo/blackjack/You.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gametwo/blackjack/Blackjack.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gametwo/blackjack/Chips.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gametwo/blackjack/Console.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/minimumblackjack/Console.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gametwo/blackjack/Dealer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gametwo/blackjack/Player.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gametwo/blackjack/Sign.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gametwo/blackjack/Stand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gametwo/blackjack/Table.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gametwo/blackjack/You.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/minimumblackjack/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/minimumblackjack/Table.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,14 +24,13 @@
     <favorites_list name="assignment1-IT301-cardgame-rhill3" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/minimumblackjack/Blackjack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="727">
-              <caret line="85" selection-start-line="85" selection-end-line="85" />
+            <state relative-caret-position="-725">
+              <caret line="48" column="21" lean-forward="true" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
               <folding>
-                <element signature="e#0#7218#0" expanded="true" />
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;field#START#0;class#Blackjack#0" />
                 <element signature="docComment;field#BLACKJACK#0;class#Blackjack#0" />
@@ -64,32 +44,7 @@
                 <element signature="method#hitDealer#0;class#Blackjack#0" />
                 <element signature="method#dealerChoice#0;class#Blackjack#0" />
                 <element signature="method#runGame#0;class#Blackjack#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/part1_test_game/Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
-              <folding>
-                <element signature="e#0#2615#0" expanded="true" />
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/minimumblackjack/Console.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="55" selection-start-line="55" selection-end-line="55" />
-              <folding>
-                <element signature="e#1238#1239#0" expanded="true" />
-                <element signature="e#1270#1271#0" expanded="true" />
+                <element signature="method#gameSwitch#0;class#Blackjack#0" />
               </folding>
             </state>
           </provider>
@@ -160,9 +115,9 @@
         <option value="$PROJECT_DIR$/src/minimumblackjack/players/Player.java" />
         <option value="$PROJECT_DIR$/src/gametwo/blackjack/players/Player.java" />
         <option value="$PROJECT_DIR$/src/gametwo/blackjack/You.java" />
-        <option value="$PROJECT_DIR$/src/minimumblackjack/Table.java" />
         <option value="$PROJECT_DIR$/src/minimumblackjack/Blackjack.java" />
         <option value="$PROJECT_DIR$/src/minimumblackjack/Console.java" />
+        <option value="$PROJECT_DIR$/src/minimumblackjack/Table.java" />
       </list>
     </option>
   </component>
@@ -177,8 +132,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -210,7 +165,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547876108610" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549507908116" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -342,12 +297,15 @@
       <workItem from="1547699586551" duration="13111000" />
       <workItem from="1547847637218" duration="594000" />
       <workItem from="1547869324542" duration="1804000" />
-      <workItem from="1547871345436" duration="3824000" />
+      <workItem from="1547871345436" duration="4349000" />
+      <workItem from="1548277396120" duration="116000" />
+      <workItem from="1549482916581" duration="91000" />
+      <workItem from="1549506699627" duration="1258000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="154769000" />
+    <option name="totallyTimeSpent" value="156759000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -360,8 +318,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1292" height="732" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26213592" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27508092" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -371,18 +330,17 @@
       <window_info anchor="bottom" id="Duplicate detector" order="0" weight="0.3294702" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info active="true" anchor="bottom" id="Find" order="2" visible="true" weight="0.3294702" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.6870861" />
-      <window_info active="true" anchor="bottom" id="Debug" order="4" visible="true" weight="0.59933776" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.95033115" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.79304636" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.3294702" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3294702" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3283582" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.31622517" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.31456953" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.3294702" />
-      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.32955465" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -392,6 +350,7 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32955465" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26234818" />
@@ -495,12 +454,6 @@
           <properties />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/minimumblackjack/Blackjack.java</url>
-          <line>47</line>
-          <properties />
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -537,13 +490,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_BinaryStringAddition.zip/BinaryStringAddition/src/BinaryAdd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_BinaryStringAddition.zip/BinaryStringAddition/src/BinaryAdd.java" />
     <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/lang/System.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="83">
@@ -672,30 +619,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/minimumblackjack/Table.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#Table#0" />
-            <element signature="docComment;method#Table#0;class#Table#0" />
-            <element signature="method#Table#0;class#Table#0" />
-            <element signature="docComment;method#setDealer#0;class#Table#0" />
-            <element signature="docComment;method#setShoe#0;class#Table#0" />
-            <element signature="docComment;method#setDiscard#0;class#Table#0" />
-            <element signature="method#setDiscard#0;class#Table#0" />
-            <element signature="docComment;method#getPlayer#0;class#Table#0" />
-            <element signature="docComment;method#getDealer#0;class#Table#0" />
-            <element signature="docComment;method#getShoe#0;class#Table#0" />
-            <element signature="method#getShoe#0;class#Table#0" />
-            <element signature="docComment;method#getDiscard#0;class#Table#0" />
-            <element signature="docComment;method#toString#0;class#Table#0" />
-            <element signature="method#toString#0;class#Table#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/minimumblackjack/players/Dealer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -786,12 +709,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/minimumblackjack/Console.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/minimumblackjack/Table.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="78" column="34" selection-start-line="78" selection-start-column="34" selection-end-line="78" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#Table#0" />
+            <element signature="docComment;method#Table#0;class#Table#0" />
+            <element signature="docComment;method#setDealer#0;class#Table#0" />
+            <element signature="docComment;method#setShoe#0;class#Table#0" />
+            <element signature="e#2088#2089#0" expanded="true" />
+            <element signature="e#2128#2129#0" expanded="true" />
+            <element signature="docComment;method#getPlayer#0;class#Table#0" />
+            <element signature="docComment;method#getDealer#0;class#Table#0" />
+            <element signature="docComment;method#getShoe#0;class#Table#0" />
+            <element signature="method#getShoe#0;class#Table#0" />
+            <element signature="docComment;method#getDiscard#0;class#Table#0" />
+            <element signature="docComment;method#toString#0;class#Table#0" />
+            <element signature="method#toString#0;class#Table#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/minimumblackjack/Blackjack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="727">
-          <caret line="85" selection-start-line="85" selection-end-line="85" />
+        <state relative-caret-position="-725">
+          <caret line="48" column="21" lean-forward="true" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
           <folding>
-            <element signature="e#0#7218#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="docComment;field#START#0;class#Blackjack#0" />
             <element signature="docComment;field#BLACKJACK#0;class#Blackjack#0" />
@@ -805,17 +757,7 @@
             <element signature="method#hitDealer#0;class#Blackjack#0" />
             <element signature="method#dealerChoice#0;class#Blackjack#0" />
             <element signature="method#runGame#0;class#Blackjack#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/minimumblackjack/Console.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-          <folding>
-            <element signature="e#1238#1239#0" expanded="true" />
-            <element signature="e#1270#1271#0" expanded="true" />
+            <element signature="method#gameSwitch#0;class#Blackjack#0" />
           </folding>
         </state>
       </provider>

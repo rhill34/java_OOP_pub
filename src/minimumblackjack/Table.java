@@ -76,7 +76,7 @@ public class Table {
      */
     public void setDiscard(ArrayList<StandardCard> discard)
     {
-            this.discard.addAll(discard);
+           this.discard = discard;
     }
 
     //    mutator
